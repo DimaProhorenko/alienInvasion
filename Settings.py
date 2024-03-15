@@ -12,6 +12,12 @@ class Settings(ABC):
     fav_icon_path = './assets/fav_icon.png'
     spaceship_icon_path = './assets/spaceship.png'
 
+    # Bullet
+    bullet_width = 3
+    bullet_height = 20
+    bullet_speed = 5.5
+    bullet_color = (220, 20, 60)
+
     @abstractmethod
     def run(self):
         pass
