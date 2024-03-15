@@ -17,9 +17,9 @@ class Ship:
         self.speed = Settings.ship_speed
 
     def update(self):
-        if self.is_moving_right:
+        if self.is_moving_right and self.rect.right < self.screen_rect.right:
             self.rect.x += self.speed
-        if self.is_moving_left:
+        if self.is_moving_left and self.rect.left > 0:
             self.rect.x -= self.speed
 
     def draw(self):
